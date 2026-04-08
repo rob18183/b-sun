@@ -211,7 +211,8 @@ h1 {
 
 .facts-grid,
 .practical-grid,
-.contact-grid {
+.contact-grid,
+.room-grid {
   display: grid;
   gap: 16px;
 }
@@ -324,7 +325,7 @@ h1 {
   line-height: 1.08;
 }
 
-.split-tour {
+.room-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
@@ -352,6 +353,54 @@ h1 {
 .split-copy h3 {
   font-size: 1.5rem;
   line-height: 1.15;
+}
+
+.detail-band {
+  display: grid;
+  grid-template-columns: 0.95fr 0.65fr 0.95fr;
+  gap: 20px;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.detail-shot {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.detail-shot img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.detail-shot-tall img {
+  height: 420px;
+}
+
+.detail-copy {
+  padding: 10px 4px;
+}
+
+.detail-copy span {
+  color: var(--accent-dark);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.detail-copy h3 {
+  margin: 10px 0;
+  font-size: clamp(1.8rem, 2.8vw, 2.3rem);
+  line-height: 1.08;
+}
+
+.detail-copy p {
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .exterior-hero {
@@ -450,7 +499,8 @@ h1 {
   .tour-block-reverse,
   .exterior-hero,
   .practical-grid,
-  .contact-grid {
+  .contact-grid,
+  .detail-band {
     grid-template-columns: 1fr;
   }
 
@@ -474,7 +524,7 @@ h1 {
 
   .site-nav,
   .facts-grid,
-  .split-tour,
+  .room-grid,
   .exterior-grid,
   .contact-grid,
   .practical-grid {
