@@ -403,6 +403,34 @@ h1 {
   line-height: 1.7;
 }
 
+.subheading-space {
+  margin-top: 26px;
+}
+
+.more-views-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.more-view {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.more-view img {
+  height: 260px;
+  object-fit: cover;
+}
+
+.more-view figcaption {
+  padding: 14px 16px 16px;
+  color: var(--muted);
+}
+
 .exterior-hero {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
@@ -500,7 +528,8 @@ h1 {
   .exterior-hero,
   .practical-grid,
   .contact-grid,
-  .detail-band {
+  .detail-band,
+  .more-views-grid {
     grid-template-columns: 1fr;
   }
 
@@ -527,7 +556,8 @@ h1 {
   .room-grid,
   .exterior-grid,
   .contact-grid,
-  .practical-grid {
+  .practical-grid,
+  .more-views-grid {
     grid-template-columns: 1fr;
   }
 
