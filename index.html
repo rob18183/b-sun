@@ -3,28 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maison B-Sun</title>
+    <title>Maison B-Sun | Maison de vacances à Bagnols-en-Forêt avec piscine privée</title>
     <meta
       name="description"
-      content="Maison B-Sun à Bagnols-en-Forêt, maison de vacances rénovée avec piscine privée dans le sud de la France."
+      content="Maison de vacances rénovée à Bagnols-en-Forêt pour 6 personnes, avec 3 chambres, 3 salles de bain, piscine privée, Wi-Fi et parking, à 20 minutes de la mer."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Knewave&family=Nunito+Sans:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
+    <div class="site-frame">
       <header class="site-header">
-        <a class="brand" href="#top">Maison B-Sun</a>
+        <a class="brand" href="#top" aria-label="Maison B-Sun, retour en haut">
+          <span class="brand-mark">B</span>
+          <span class="brand-text">Maison B-Sun</span>
+        </a>
         <nav class="site-nav" aria-label="Navigation principale">
           <a href="#maison">La maison</a>
-          <a href="#pieces">Les pièces</a>
-          <a href="#exterieurs">Extérieurs</a>
-          <a href="#infos">Infos</a>
+          <a href="#interieurs">Les intérieurs</a>
+          <a href="#exterieurs">Les extérieurs</a>
+          <a href="#infos">Infos pratiques</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -34,286 +37,287 @@
           <div class="hero-copy">
             <p class="eyebrow">Bagnols-en-Forêt</p>
             <h1>Bienvenue à la Maison B-Sun.</h1>
+            <p class="hero-lead">
+              Charmante maison de vacances pour 6 personnes, avec piscine privée,
+              à proximité du village et à environ 20 minutes de la mer.
+            </p>
             <p class="hero-text">
-              Découvrez cette maison de charme entièrement rénovée dans le sud
-              de la France. Elle peut accueillir jusqu’à 6 personnes avec
+              Entièrement rénovée, la Maison B-Sun accueille famille et amis
+              dans un cadre calme, lumineux et facile à vivre. Vous y trouverez
               3 chambres, 3 salles de bain, une piscine privée, le Wi-Fi, la
-              TV et 2 places de parking.
+              télévision et 2 places de parking.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#contact">Nous contacter</a>
-              <a class="button button-secondary" href="#pieces">Voir les pièces</a>
+              <a class="button button-secondary" href="#maison">Découvrir la maison</a>
             </div>
           </div>
-          <figure class="hero-media">
+
+          <div class="hero-visual">
+            <figure class="hero-photo hero-photo-main">
+              <img
+                src="assets/images/web/patio-1.webp"
+                alt="Terrasse extérieure de la Maison B-Sun avec salon de jardin"
+              />
+            </figure>
+            <figure class="hero-photo hero-photo-accent">
+              <img
+                src="assets/images/web/swimmingpool.webp"
+                alt="Piscine privée de la Maison B-Sun"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section class="facts-strip" aria-label="Informations clés">
+          <p>6 personnes</p>
+          <p>3 chambres</p>
+          <p>3 lits doubles</p>
+          <p>3 salles de bain</p>
+          <p>Piscine privée</p>
+          <p>Wi-Fi</p>
+          <p>2 places de parking</p>
+          <p>1 km du village</p>
+          <p>Environ 20 min de la mer</p>
+        </section>
+
+        <section class="section section-overview" id="maison">
+          <div class="section-copy">
+            <p class="eyebrow">La maison</p>
+            <h2>Une maison de vacances rénovée, lumineuse et facile à vivre.</h2>
+            <p>
+              Découvrez votre prochaine maison de vacances dans le sud de la
+              France. Entièrement rénovée, la Maison B-Sun a été pensée pour
+              accueillir confortablement jusqu&apos;à 6 personnes, en famille ou
+              entre amis.
+            </p>
+            <p>
+              Avec ses 3 chambres, ses 3 salles de bain, sa piscine privée de
+              3 x 7 m, son Wi-Fi, sa télévision et ses 2 places de parking,
+              elle offre un cadre simple, agréable et pratique pour profiter
+              pleinement du séjour.
+            </p>
+            <p>
+              Idéalement située à Bagnols-en-Forêt, la maison se trouve à
+              seulement 1 km du village, à environ 20 minutes des plages, et
+              permet de rayonner facilement dans la région.
+            </p>
+            <p class="location-line">
+              À proximité de Sainte-Maxime, Cannes, Saint-Tropez, Nice et Fayence.
+            </p>
+          </div>
+          <figure class="section-photo section-photo-overview">
             <img
-              src="assets/images/exterior-main.png"
-              alt="Vue de la façade et de la terrasse de la Maison B-Sun"
+              src="assets/images/web/house-outside-view-2.webp"
+              alt="Vue générale de la maison et des extérieurs"
             />
           </figure>
         </section>
 
-        <section class="section section-facts" id="maison">
-          <div class="facts-grid">
-            <article class="fact-card">
-              <span>Capacité</span>
-              <strong>6 personnes</strong>
-            </article>
-            <article class="fact-card">
-              <span>Chambres</span>
-              <strong>3 chambres</strong>
-            </article>
-            <article class="fact-card">
-              <span>Couchages</span>
-              <strong>3 lits doubles</strong>
-            </article>
-            <article class="fact-card">
-              <span>Confort</span>
-              <strong>3 salles de bain</strong>
-            </article>
-            <article class="fact-card">
-              <span>Extérieur</span>
-              <strong>Piscine privée</strong>
-            </article>
-            <article class="fact-card">
-              <span>Situation</span>
-              <strong>1 km du village</strong>
-            </article>
-            <article class="fact-card">
-              <span>Accès</span>
-              <strong>20 min de la mer</strong>
-            </article>
-          </div>
-          <div class="intro-grid">
-            <div class="intro-copy">
-              <p class="eyebrow">La maison</p>
-              <h2>Une maison de vacances simple, lumineuse et facile à vivre.</h2>
-              <p>
-                La Maison B-Sun est située à Bagnols-en-Forêt, sur un terrain
-                de 1 000 m². La maison a été entièrement rénovée et pensée pour
-                accueillir famille et amis dans un cadre calme, entre village,
-                collines et mer.
-              </p>
-              <p>
-                Vous êtes à 1 km du village pour les courses et les restaurants,
-                à environ 20 minutes de la mer, et proche de Cannes,
-                Saint-Tropez, Nice et Sainte-Maxime.
-              </p>
-            </div>
-            <figure class="intro-media">
-              <img
-                src="assets/images/terrace-lounge.png"
-                alt="Salon extérieur sur la terrasse de la maison"
-              />
-            </figure>
-          </div>
-        </section>
-
-        <section class="section section-tour" id="pieces">
-          <div class="section-heading section-heading-wide">
-            <p class="eyebrow">Les pièces</p>
-            <h2>Les pièces de la maison.</h2>
+        <section class="section section-interiors" id="interieurs">
+          <div class="section-heading">
+            <p class="eyebrow">Les intérieurs</p>
+            <h2>Des espaces simples, confortables et pensés pour le séjour.</h2>
             <p class="section-intro">
-              Trois chambres doubles, trois salles de bain, un séjour lumineux,
-              une cuisine rénovée et un coin bureau. Les photos ci-dessous
-              donnent une vue plus fidèle de la maison et de ses volumes.
+              La maison réunit 3 chambres, 3 salles de bain, un séjour lumineux,
+              une cuisine équipée et un coin bureau. L&apos;ensemble conserve une
+              atmosphère claire, sobre et reposante.
             </p>
           </div>
 
-          <article class="tour-block">
-            <figure class="tour-image">
-              <img src="assets/images/bedroom-natural.jpg" alt="Première chambre avec lit double et tons naturels" />
-            </figure>
-            <div class="tour-copy">
-              <span>Chambre 1</span>
-              <h3>Une première chambre double, claire et reposante.</h3>
-              <p>
-                Cette chambre garde l’esprit de la maison : des lignes simples,
-                une décoration sobre et une atmosphère calme. Comme les deux
-                autres chambres, elle est équipée d’un lit double.
-              </p>
-            </div>
-          </article>
-
-          <article class="tour-block tour-block-reverse">
-            <figure class="tour-image">
-              <img src="assets/images/bedroom-coral.jpg" alt="Deuxième chambre avec accents corail" />
-            </figure>
-            <div class="tour-copy">
-              <span>Chambre 2</span>
-              <h3>Une seconde chambre double, dans une ambiance plus douce.</h3>
-              <p>
-                Elle reprend la même simplicité avec une autre palette et une
-                lumière différente. L’ensemble reste cohérent, sans que les
-                chambres se ressemblent complètement.
-              </p>
-            </div>
-          </article>
-
-          <article class="tour-block">
-            <figure class="tour-image">
+          <div class="interior-feature">
+            <figure class="section-photo interior-main">
               <img
-                src="assets/images/living-wide.jpg"
-                alt="Séjour de la maison avec fauteuils, télévision et cheminée"
+                src="assets/images/web/livingroom-6.webp"
+                alt="Séjour lumineux avec espace salon et table à manger"
               />
             </figure>
-            <div class="tour-copy">
-              <span>Séjour</span>
-              <h3>Un séjour lumineux pour se retrouver, lire ou rentrer de la plage.</h3>
-              <p>
-                Le salon, la télévision et la cheminée se trouvent dans une
-                pièce agréable à vivre tout au long de la journée, que ce soit
-                pour un matin tranquille, un déjeuner à l’intérieur ou une
-                soirée à la maison.
-              </p>
-            </div>
-          </article>
-
-          <div class="room-grid">
-            <article class="split-card">
-              <figure class="split-image">
-                <img src="assets/images/bedroom-detail.jpg" alt="Détail de la décoration dans une chambre" />
-              </figure>
-              <div class="split-copy">
-                <span>Détail chambre</span>
-                <h3>Des chambres sobres, sans surcharge.</h3>
+            <div class="interior-side">
+              <article class="feature-card">
+                <span>Le séjour</span>
+                <h3>Un espace lumineux et agréable à vivre.</h3>
                 <p>
-                  Les matières et les détails restent simples. L’idée n’est pas
-                  d’en faire trop, mais de garder des pièces agréables et
-                  reposantes.
+                  Climatisation, télévision, Internet Wi-Fi et table à manger:
+                  un lieu idéal pour se retrouver après la plage, partager un
+                  repas ou profiter d&apos;un moment calme à la maison.
+                </p>
+              </article>
+              <figure class="section-photo interior-side-photo">
+                <img
+                  src="assets/images/web/livingroom-2.webp"
+                  alt="Autre vue du séjour de la maison"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="interior-grid">
+            <article class="room-card room-card-large">
+              <figure class="room-card-photo">
+                <img
+                  src="assets/images/web/bedroom1-1.webp"
+                  alt="Chambre 1 avec lit double"
+                />
+              </figure>
+              <div class="room-card-copy">
+                <span>Chambre 1</span>
+                <p>
+                  Une chambre de 12 m2 au rez-de-chaussée, climatisée, avec
+                  porte-fenêtre donnant sur le jardin, penderie, lit double de
+                  1,60 m, salle de bain avec douche italienne et toilette séparée.
                 </p>
               </div>
             </article>
-            <article class="split-card">
-              <figure class="split-image">
-                <img src="assets/images/bathroom.jpg" alt="Salle de bain moderne de la maison" />
+
+            <article class="room-card">
+              <figure class="room-card-photo">
+                <img
+                  src="assets/images/web/bedroom2-2.webp"
+                  alt="Chambre 2 avec lit double et décoration murale"
+                />
               </figure>
-              <div class="split-copy">
+              <div class="room-card-copy">
+                <span>Chambre 2</span>
+                <p>
+                  Une chambre de 20 m2 au rez-de-chaussée, climatisée, avec
+                  porte-fenêtre donnant sur le jardin, penderie, lit double de
+                  1,60 m et salle de bain attenante.
+                </p>
+              </div>
+            </article>
+
+            <article class="room-card">
+              <figure class="room-card-photo">
+                <img
+                  src="assets/images/web/bedroom3-1.webp"
+                  alt="Chambre 3 à l'étage avec lit double"
+                />
+              </figure>
+              <div class="room-card-copy">
+                <span>Chambre 3</span>
+                <p>
+                  Une chambre de 20 m2 au premier étage, climatisée, avec
+                  fenêtre sur le jardin, penderie, lit double de 1,80 m et
+                  salle de bain attenante.
+                </p>
+              </div>
+            </article>
+
+            <article class="room-card">
+              <figure class="room-card-photo">
+                <img
+                  src="assets/images/web/bathroom1-1.webp"
+                  alt="Salle de bain moderne de la maison"
+                />
+              </figure>
+              <div class="room-card-copy">
                 <span>Salles de bain</span>
-                <h3>Trois salles de bain pour un séjour confortable à plusieurs.</h3>
                 <p>
-                  La maison dispose de 3 salles de bain, ce qui rend le séjour
-                  plus simple et plus confortable quand on vient en famille ou
-                  entre amis.
+                  Trois salles de bain apportent un vrai confort au quotidien,
+                  que l&apos;on vienne en famille ou entre amis pour un long
+                  week-end ou de vraies vacances.
                 </p>
               </div>
             </article>
-            <article class="split-card">
-              <figure class="split-image">
-                <img src="assets/images/kitchen.jpg" alt="Vue intérieure avec rangements et circulation entre les espaces" />
+
+            <article class="room-card">
+              <figure class="room-card-photo">
+                <img
+                  src="assets/images/web/kitchen.webp"
+                  alt="Cuisine équipée avec rangements"
+                />
               </figure>
-              <div class="split-copy">
-                <span>Rangements</span>
-                <h3>Une vue intérieure qui montre aussi les rangements et la circulation.</h3>
+              <div class="room-card-copy">
+                <span>La cuisine</span>
                 <p>
-                  Cette photo ne montre pas directement la cuisine. Elle reste
-                  utile ici parce qu’elle donne une bonne idée des volumes, des
-                  rangements et de la continuité entre les espaces.
+                  Four, taque à induction, frigo, lave-vaisselle, machine
+                  Nespresso et micro-ondes. Un cellier complète l&apos;ensemble
+                  avec un deuxième frigo, une machine à laver et un séchoir.
                 </p>
               </div>
             </article>
-            <article class="split-card">
-              <figure class="split-image">
-                <img src="assets/images/office.jpg" alt="Coin bureau dans la maison" />
+
+            <article class="room-card">
+              <figure class="room-card-photo">
+                <img
+                  src="assets/images/web/office-1.webp"
+                  alt="Coin bureau dans la maison"
+                />
               </figure>
-              <div class="split-copy">
-                <span>Bureau</span>
-                <h3>Un coin bureau discret et pratique.</h3>
+              <div class="room-card-copy">
+                <span>Le bureau</span>
                 <p>
-                  Le Wi-Fi est disponible sur place, avec un vrai plan de
-                  travail pour lire, organiser la journée ou traiter quelques
-                  dossiers si nécessaire.
+                  Un coin bureau simple et pratique pour lire, organiser la
+                  journée ou travailler ponctuellement pendant le séjour.
                 </p>
               </div>
             </article>
           </div>
 
-          <div class="detail-band">
-            <figure class="detail-shot">
-              <img src="assets/images/living-detail.jpg" alt="Détail du séjour avec table basse et fauteuils" />
+          <div class="closing-band">
+            <figure class="closing-band-photo">
+              <img
+                src="assets/images/web/bathroom3.webp"
+                alt="Détail intérieur de la maison"
+              />
             </figure>
-            <figure class="detail-shot detail-shot-tall">
-              <img src="assets/images/stair-detail.jpg" alt="Détail de l'escalier avec garde-corps en verre" />
-            </figure>
-            <div class="detail-copy">
-              <span>Détails</span>
-              <h3>La rénovation reste simple et cohérente dans toute la maison.</h3>
-              <p>
-                On retrouve les mêmes matériaux, la même sobriété et la même
-                lumière d’une pièce à l’autre. Cela donne à l’ensemble une
-                atmosphère claire et apaisée.
-              </p>
-            </div>
-          </div>
-
-          <div class="section-heading section-heading-wide subheading-space">
-            <p class="eyebrow">Autres vues</p>
-            <h2>Quelques vues complémentaires.</h2>
-            <p class="section-intro">
-              D’autres photos permettent de compléter la visite et de mieux se
-              rendre compte de l’ambiance générale de la maison.
+            <p>
+              D&apos;une pièce à l&apos;autre, la rénovation reste cohérente,
+              lumineuse et sans surcharge. Les espaces ont été pensés pour être
+              faciles à vivre, aussi bien pour un long week-end que pour de
+              vraies vacances en famille ou entre amis.
             </p>
-          </div>
-
-          <div class="more-views-grid">
-            <figure class="more-view">
-              <img src="assets/images/living-room.jpg" alt="Autre vue du séjour de la maison" />
-              <figcaption>Autre vue du séjour</figcaption>
-            </figure>
-            <figure class="more-view">
-              <img src="assets/images/bedroom-1.png" alt="Vue complémentaire d'une chambre double" />
-              <figcaption>Autre vue d’une chambre</figcaption>
-            </figure>
-            <figure class="more-view">
-              <img src="assets/images/living-detail.jpg" alt="Détail du séjour avec table basse et fauteuils" />
-              <figcaption>Détail du salon</figcaption>
-            </figure>
-            <figure class="more-view">
-              <img src="assets/images/stair-detail.jpg" alt="Détail de l'escalier et du garde-corps en verre" />
-              <figcaption>Détail de circulation intérieure</figcaption>
-            </figure>
           </div>
         </section>
 
-        <section class="section section-exterior" id="exterieurs">
-          <div class="section-heading section-heading-wide">
-            <p class="eyebrow">Extérieurs</p>
-            <h2>Les extérieurs prolongent naturellement la maison.</h2>
+        <section class="section section-exteriors" id="exterieurs">
+          <div class="section-heading">
+            <p class="eyebrow">Les extérieurs</p>
+            <h2>La maison se prolonge naturellement dehors.</h2>
+            <p class="section-intro">
+              Aux beaux jours, la vie s&apos;organise facilement entre la maison,
+              la terrasse et la piscine. Le salon extérieur, les espaces repas
+              et la piscine privée invitent à profiter pleinement du soleil du
+              Sud, du matin jusqu&apos;en fin de journée.
+            </p>
           </div>
 
-          <div class="exterior-hero">
-            <figure class="exterior-main">
+          <div class="exterior-layout">
+            <figure class="section-photo exterior-photo-large">
               <img
-                src="assets/images/pool-detail.png"
-                alt="Piscine privée de la maison"
+                src="assets/images/web/patio-6.webp"
+                alt="Terrasse extérieure de la maison vue depuis l'espace lounge"
               />
             </figure>
-            <div class="exterior-copy">
+
+            <article class="pool-highlight">
+              <span>Piscine privée 3 x 7 m</span>
               <p>
-                La piscine privée de 3 x 7 m, la terrasse et le salon extérieur
-                font partie de la vie quotidienne sur place. Dès qu’il fait
-                beau, la maison se prolonge dehors très naturellement.
+                Avec ses vues dégagées, sa terrasse en bois et son atmosphère
+                calme, l&apos;extérieur prolonge naturellement le confort de la
+                maison.
               </p>
-              <p>
-                C’est un lieu pensé pour profiter du soleil du Sud, déjeuner à
-                l’extérieur, passer du temps près de la piscine et rentrer sans
-                contrainte entre intérieur et terrasse.
-              </p>
-            </div>
+              <figure class="section-photo exterior-photo-tall">
+                <img
+                  src="assets/images/web/swimmingpool.webp"
+                  alt="Piscine privée de la maison"
+                />
+              </figure>
+            </article>
           </div>
 
-          <div class="exterior-grid">
-            <figure class="exterior-card">
+          <div class="exterior-gallery">
+            <figure class="gallery-card">
               <img
-                src="assets/images/terrace-lounge.png"
-                alt="Terrasse avec salon extérieur"
+                src="assets/images/web/patio2-2.webp"
+                alt="Terrasse et piscine extérieure"
               />
               <figcaption>Terrasse et salon extérieur</figcaption>
             </figure>
-            <figure class="exterior-card">
+            <figure class="gallery-card">
               <img
-                src="assets/images/exterior-main.png"
-                alt="Façade de la maison et terrasse"
+                src="assets/images/web/house-outside-view-2.webp"
+                alt="Vue générale de la maison et des extérieurs"
               />
               <figcaption>Vue générale de la maison</figcaption>
             </figure>
@@ -321,61 +325,51 @@
         </section>
 
         <section class="section section-practical" id="infos">
-          <div class="section-heading section-heading-wide">
+          <div class="section-heading">
             <p class="eyebrow">Infos pratiques</p>
-            <h2>Informations pratiques.</h2>
+            <h2>Tout le nécessaire pour un séjour confortable.</h2>
           </div>
+
           <div class="practical-grid">
-            <article class="detail-item">
+            <article class="practical-item">
               <span>Équipement</span>
-              <h3>Wi-Fi, TV et 2 places de parking</h3>
-              <p>Tout le nécessaire pour un séjour confortable sur place.</p>
+              <h3>Wi-Fi, télévision, piscine privée et 2 places de parking.</h3>
             </article>
-            <article class="detail-item">
+            <article class="practical-item">
               <span>Village</span>
-              <h3>Bagnols-en-Forêt à 1 km</h3>
-              <p>Boulangerie, restaurants, courses et commodités à proximité.</p>
+              <h3>Le village de Bagnols-en-Forêt se trouve à 1 km.</h3>
+              <p>Commerces, restaurants et commodités du quotidien à proximité.</p>
             </article>
-            <article class="detail-item">
-              <span>Région</span>
-              <h3>Sainte-Maxime, Cannes, Saint-Tropez, Nice</h3>
-              <p>Un bon point de départ pour découvrir la région tout en restant au calme.</p>
+            <article class="practical-item">
+              <span>Situation</span>
+              <h3>Plages et environs facilement accessibles.</h3>
+              <p>Sainte-Maxime, Cannes, Saint-Tropez, Nice et Fayence.</p>
             </article>
           </div>
         </section>
 
-        <section class="section section-contact" id="contact">
-          <div class="section-heading section-heading-wide">
+        <section class="contact-band" id="contact">
+          <div class="contact-copy">
             <p class="eyebrow">Contact</p>
-            <h2>Pour plus d’informations, veuillez nous contacter.</h2>
-            <p class="section-intro">
-              Pour le moment, les demandes se font directement par mail ou par
-              téléphone.
+            <h2>Pour plus d&apos;informations, veuillez nous contacter.</h2>
+            <p>
+              Pour toute demande d&apos;information ou de disponibilité, vous
+              pouvez nous écrire directement par e-mail ou nous appeler.
             </p>
+            <p>Nous serons ravis de vous renseigner sur la maison et votre séjour.</p>
           </div>
-          <div class="contact-grid">
-            <article class="contact-card">
-              <span>Email</span>
-              <a href="mailto:brigitte.leclercq.vdb@gmail.com">brigitte.leclercq.vdb@gmail.com</a>
-              <p>Pour les demandes d’informations et de disponibilité.</p>
-            </article>
-            <article class="contact-card">
-              <span>Email</span>
-              <a href="mailto:Andre.vandenbauw@progesco.be">Andre.vandenbauw@progesco.be</a>
-              <p>Vous pouvez également écrire directement à cette adresse.</p>
-            </article>
-            <article class="contact-card">
-              <span>Téléphone</span>
-              <a href="tel:+32491869869">+32 491 86 98 69</a>
-              <p>Pour échanger directement sur les dates et le séjour.</p>
-            </article>
+
+          <div class="contact-block">
+            <a href="mailto:brigitte.leclercq.vdb@gmail.com">brigitte.leclercq.vdb@gmail.com</a>
+            <a href="mailto:Andre.vandenbauw@progesco.be">Andre.vandenbauw@progesco.be</a>
+            <a href="tel:+32491869869">+32 491 86 98 69</a>
           </div>
         </section>
-
-        <footer class="site-footer">
-          <p>Maison B-Sun, Bagnols-en-Forêt, Sud de la France.</p>
-        </footer>
       </main>
+
+      <footer class="site-footer">
+        <p>Maison B-Sun, Bagnols-en-Forêt, Sud de la France.</p>
+      </footer>
     </div>
   </body>
 </html>
