@@ -8,13 +8,30 @@
       name="description"
       content="Maison de vacances rénovée à Bagnols-en-Forêt pour 6 personnes, avec 3 chambres, 3 salles de bain, piscine privée, Wi-Fi et parking, à 20 minutes de la mer."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Patrick+Hand+SC&display=swap"
-      rel="stylesheet"
+    <link rel="canonical" href="https://rob18183.github.io/b-sun/" />
+    <meta name="theme-color" content="#1843a8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Maison B-Sun | Maison de vacances avec piscine privée" />
+    <meta
+      property="og:description"
+      content="Maison de vacances pour 6 personnes à Bagnols-en-Forêt, avec 3 chambres, 3 salles de bain, piscine privée et accès rapide au village, aux plages et aux environs."
     />
+    <meta property="og:url" content="https://rob18183.github.io/b-sun/" />
+    <meta property="og:image" content="https://rob18183.github.io/b-sun/assets/og-image.jpg" />
+    <meta property="og:image:alt" content="Terrasse ensoleillée de la Maison B-Sun avec salon extérieur" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Maison B-Sun | Maison de vacances avec piscine privée" />
+    <meta
+      name="twitter:description"
+      content="Maison de vacances pour 6 personnes à Bagnols-en-Forêt, proche du village, de la mer et des grandes destinations de la Côte d’Azur."
+    />
+    <meta name="twitter:image" content="https://rob18183.github.io/b-sun/assets/og-image.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="js/site.js"></script>
   </head>
   <body>
     <div class="site-frame">
@@ -28,6 +45,7 @@
           <a href="#interieurs">Les intérieurs</a>
           <a href="#exterieurs">Les extérieurs</a>
           <a href="#infos">Infos pratiques</a>
+          <a href="#localisation">Localisation</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -52,83 +70,29 @@
           <div class="hero-visual">
             <figure class="hero-photo hero-photo-main">
               <img
-                src="assets/images/web/patio-1.webp"
+                src="assets/images/responsive/patio-1-1400.webp"
+                srcset="
+                  assets/images/responsive/patio-1-640.webp 640w,
+                  assets/images/responsive/patio-1-960.webp 960w,
+                  assets/images/responsive/patio-1-1400.webp 1400w
+                "
+                sizes="(max-width: 1080px) calc(100vw - 32px), 52vw"
                 alt="Terrasse extérieure de la Maison B-Sun avec salon de jardin"
+                width="2200"
+                height="1650"
+                fetchpriority="high"
+                loading="eager"
+                decoding="async"
               />
             </figure>
           </div>
         </section>
 
-        <section class="facts-strip" aria-label="Informations clés">
-          <p>6 personnes</p>
-          <p>3 chambres</p>
-          <p>3 lits doubles</p>
-          <p>3 salles de bain</p>
-          <p>Piscine privée</p>
-          <p>Wi-Fi</p>
-          <p>2 places de parking</p>
-          <p>1 km du village</p>
-          <p>Environ 20 min de la mer</p>
-        </section>
+        <section class="facts-strip" aria-label="Informations clés" data-facts></section>
 
         <section class="section brochure-section" id="maison">
-          <div class="brochure-copy">
-            <h2>La maison</h2>
-            <p>
-              Maison de vacances rénovée pour 6 personnes, à 1 km du village et
-              à environ 20 minutes de la mer.
-            </p>
-            <p>
-              3 chambres, 3 salles de bain, piscine privée, Wi-Fi, télévision
-              et 2 places de parking.
-            </p>
-            <p class="location-line">
-              Sainte-Maxime, Cannes, Saint-Tropez, Nice et Fayence à proximité.
-            </p>
-          </div>
-          <div class="media-slider" data-slider>
-            <div class="media-slider-track">
-              <figure class="media-slide is-active">
-                <img
-                  src="assets/design-pdf-extract/aerial-overview.jpg"
-                  alt="Vue aérienne de la maison et de son environnement"
-                />
-                <figcaption>
-                  <strong>Vue aérienne</strong>
-                  <span>Un aperçu plus large de la maison dans son environnement.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img
-                  src="assets/images/web/house-outside-view-2.webp"
-                  alt="Vue générale de la maison et des extérieurs"
-                />
-                <figcaption>
-                  <strong>Vue générale</strong>
-                  <span>La maison, la piscine et la terrasse vues dans leur ensemble.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img
-                  src="assets/images/web/patio-1.webp"
-                  alt="Terrasse principale de la maison"
-                />
-                <figcaption>
-                  <strong>Terrasse principale</strong>
-                  <span>La terrasse et le salon extérieur au plus près de la maison.</span>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="media-slider-controls">
-              <button class="slider-button" type="button" data-dir="-1" aria-label="Image précédente">Précédent</button>
-              <div class="slider-dots" aria-label="Navigation de la maison">
-                <button class="slider-dot is-active" type="button" aria-label="Voir la vue aérienne" data-slide="0"></button>
-                <button class="slider-dot" type="button" aria-label="Voir la vue générale" data-slide="1"></button>
-                <button class="slider-dot" type="button" aria-label="Voir la terrasse principale" data-slide="2"></button>
-              </div>
-              <button class="slider-button" type="button" data-dir="1" aria-label="Image suivante">Suivant</button>
-            </div>
-          </div>
+          <div class="brochure-copy" data-copy="overview"></div>
+          <div class="media-slider" data-slider="overview" data-image-sizes="(max-width: 1080px) calc(100vw - 32px), 58vw"></div>
         </section>
 
         <section class="section section-interior-summary" id="interieurs">
@@ -139,266 +103,42 @@
               ouverte et un bureau.
             </p>
           </div>
-          <div class="summary-grid">
-            <figure class="summary-card">
-              <img src="assets/images/web/bedroom1-1.webp" alt="Chambre de la maison" />
-              <figcaption>3 chambres</figcaption>
-            </figure>
-            <figure class="summary-card">
-              <img src="assets/images/web/bathroom1-1.webp" alt="Salle de bain de la maison" />
-              <figcaption>3 salles de bains</figcaption>
-            </figure>
-            <figure class="summary-card">
-              <img src="assets/images/web/office-1.webp" alt="Coin bureau dans la maison" />
-              <figcaption>Bureau</figcaption>
-            </figure>
-            <figure class="summary-card">
-              <img src="assets/images/web/livingroom-2.webp" alt="Salon de la maison" />
-              <figcaption>Salon</figcaption>
-            </figure>
-          </div>
+          <div class="summary-grid" data-summary-grid></div>
         </section>
 
         <section class="section brochure-section brochure-section-rooms">
-          <div class="brochure-copy">
-            <h2>Les chambres</h2>
-            <div class="mini-room-list">
-              <article class="mini-room">
-                <h3>Chambre à l&apos;étage</h3>
-                <p>Lit double de 1,80 m, atmosphère calme et salle de bain attenante.</p>
-              </article>
-              <article class="mini-room">
-                <h3>Chambre au rez-de-chaussée</h3>
-                <p>Lit double de 1,60 m, accès jardin et salle de bain attenante.</p>
-              </article>
-              <article class="mini-room">
-                <h3>Autre chambre au rez-de-chaussée</h3>
-                <p>Lit double de 1,60 m, accès jardin, douche italienne et toilette séparée.</p>
-              </article>
-            </div>
-          </div>
-          <div class="media-slider" data-slider>
-            <div class="media-slider-track">
-              <figure class="media-slide is-active">
-                <img src="assets/images/web/bedroom3-1.webp" alt="Chambre à l'étage avec lit double" />
-                <figcaption>
-                  <strong>Chambre à l&apos;étage</strong>
-                  <span>La chambre située à l&apos;étage, avec lit double 1,80 m.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img src="assets/images/web/bathroom1-1.webp" alt="Salle de bain attenante" />
-                <figcaption>
-                  <strong>Salle de bain attenante</strong>
-                  <span>Une des salles de bain reliées directement à une chambre.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img src="assets/images/web/bedroom2-2.webp" alt="Chambre au rez-de-chaussée avec lit double" />
-                <figcaption>
-                  <strong>Chambre au rez-de-chaussée</strong>
-                  <span>Une chambre avec lit double 1,60 m et accès direct vers l&apos;extérieur.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img src="assets/images/web/bathroom1-2.webp" alt="Autre salle de bain de la maison" />
-                <figcaption>
-                  <strong>Autre salle de bain</strong>
-                  <span>Une autre vue des salles de bain de la maison.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img src="assets/images/web/bedroom1-1.webp" alt="Autre chambre au rez-de-chaussée" />
-                <figcaption>
-                  <strong>Autre chambre au rez-de-chaussée</strong>
-                  <span>Une chambre double avec accès jardin et ambiance claire.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img src="assets/images/web/bathroom3.webp" alt="Détail supplémentaire d'une salle de bain" />
-                <figcaption>
-                  <strong>Détail salle de bain</strong>
-                  <span>Un détail intérieur qui complète la visite des chambres.</span>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="media-slider-controls">
-              <button class="slider-button" type="button" data-dir="-1" aria-label="Image précédente">Précédent</button>
-              <div class="slider-dots" aria-label="Navigation des chambres">
-                <button class="slider-dot is-active" type="button" aria-label="Voir la chambre à l'étage" data-slide="0"></button>
-                <button class="slider-dot" type="button" aria-label="Voir la salle de bain attenante" data-slide="1"></button>
-                <button class="slider-dot" type="button" aria-label="Voir la chambre au rez-de-chaussée" data-slide="2"></button>
-                <button class="slider-dot" type="button" aria-label="Voir une autre salle de bain" data-slide="3"></button>
-                <button class="slider-dot" type="button" aria-label="Voir l'autre chambre au rez-de-chaussée" data-slide="4"></button>
-                <button class="slider-dot" type="button" aria-label="Voir un détail de salle de bain" data-slide="5"></button>
-              </div>
-              <button class="slider-button" type="button" data-dir="1" aria-label="Image suivante">Suivant</button>
-            </div>
-          </div>
+          <div class="brochure-copy" data-copy="rooms"></div>
+          <div class="media-slider" data-slider="rooms" data-image-sizes="(max-width: 1080px) calc(100vw - 32px), 58vw"></div>
         </section>
 
         <section class="section brochure-section">
-          <div class="brochure-copy">
-            <h2>Salon &amp; bureau</h2>
-            <p>Un espace lumineux et simple à vivre, avec table à manger, télévision, Wi-Fi et coin bureau.</p>
-          </div>
-          <div class="media-slider" data-slider>
-            <div class="media-slider-track">
-              <figure class="media-slide is-active">
-                <img src="assets/images/web/livingroom-2.webp" alt="Salon de la maison" />
-                <figcaption>
-                  <strong>Le salon</strong>
-                  <span>Un espace calme pour lire, se retrouver ou rentrer de la plage.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img src="assets/images/web/office-1.webp" alt="Coin bureau dans la maison" />
-                <figcaption>
-                  <strong>Le bureau</strong>
-                  <span>Un coin simple et pratique pour lire ou travailler ponctuellement.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img src="assets/images/web/livingroom-6.webp" alt="Autre vue du salon et de la cuisine" />
-                <figcaption>
-                  <strong>Pièce de vie</strong>
-                  <span>Salon, cuisine ouverte et table à manger dans un même volume lumineux.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img src="assets/images/web/livingroom-3.webp" alt="Détail du séjour de la maison" />
-                <figcaption>
-                  <strong>Détail du séjour</strong>
-                  <span>Un autre angle sur l&apos;atmosphère intérieure de la pièce de vie.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img src="assets/images/web/livingroom-4.webp" alt="Autre détail du séjour de la maison" />
-                <figcaption>
-                  <strong>Autre vue intérieure</strong>
-                  <span>Une vue complémentaire du séjour et de sa circulation.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img src="assets/images/web/kitchen.webp" alt="Cuisine équipée de la maison" />
-                <figcaption>
-                  <strong>La cuisine</strong>
-                  <span>La cuisine ouverte complète naturellement la pièce de vie.</span>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="media-slider-controls">
-              <button class="slider-button" type="button" data-dir="-1" aria-label="Image précédente">Précédent</button>
-              <div class="slider-dots" aria-label="Navigation du salon et bureau">
-                <button class="slider-dot is-active" type="button" aria-label="Voir le salon" data-slide="0"></button>
-                <button class="slider-dot" type="button" aria-label="Voir le bureau" data-slide="1"></button>
-                <button class="slider-dot" type="button" aria-label="Voir la pièce de vie" data-slide="2"></button>
-                <button class="slider-dot" type="button" aria-label="Voir un détail du séjour" data-slide="3"></button>
-                <button class="slider-dot" type="button" aria-label="Voir une autre vue intérieure" data-slide="4"></button>
-                <button class="slider-dot" type="button" aria-label="Voir la cuisine" data-slide="5"></button>
-              </div>
-              <button class="slider-button" type="button" data-dir="1" aria-label="Image suivante">Suivant</button>
-            </div>
-          </div>
+          <div class="brochure-copy" data-copy="living"></div>
+          <div class="media-slider" data-slider="living" data-image-sizes="(max-width: 1080px) calc(100vw - 32px), 58vw"></div>
         </section>
 
         <section class="section brochure-section" id="exterieurs">
-          <div class="brochure-copy">
-            <h2>L’extérieur</h2>
-            <ul class="feature-list">
-              <li>Piscine privée 3 x 7 m</li>
-              <li>Terrasse en bois</li>
-              <li>Salon extérieur</li>
-              <li>Espaces repas</li>
-            </ul>
-          </div>
-          <div class="media-slider" data-slider>
-            <div class="media-slider-track">
-              <figure class="media-slide is-active">
-                <img
-                  src="assets/images/web/patio-6.webp"
-                  alt="Terrasse extérieure de la maison vue depuis l'espace lounge"
-                />
-                <figcaption>
-                  <strong>Terrasse</strong>
-                  <span>Le salon extérieur prolonge naturellement la maison.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img
-                  src="assets/images/web/swimmingpool.webp"
-                  alt="Piscine privée de la maison"
-                />
-                <figcaption>
-                  <strong>Piscine privée</strong>
-                  <span>Une piscine 3 x 7 m pour profiter du soleil du Sud.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img
-                  src="assets/images/web/patio2-2.webp"
-                  alt="Terrasse et piscine extérieure"
-                />
-                <figcaption>
-                  <strong>Extérieurs</strong>
-                  <span>Terrasse, repas dehors et circulation facile entre intérieur et jardin.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img
-                  src="assets/images/web/patio-1.webp"
-                  alt="Terrasse principale de la maison"
-                />
-                <figcaption>
-                  <strong>Salon extérieur</strong>
-                  <span>Une autre vue du grand espace extérieur attenant à la maison.</span>
-                </figcaption>
-              </figure>
-              <figure class="media-slide">
-                <img
-                  src="assets/images/web/house-outside-view-2.webp"
-                  alt="Vue générale de la maison depuis l'extérieur"
-                />
-                <figcaption>
-                  <strong>Maison et jardin</strong>
-                  <span>Une vue d&apos;ensemble de la maison, de la terrasse et du terrain.</span>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="media-slider-controls">
-              <button class="slider-button" type="button" data-dir="-1" aria-label="Image précédente">Précédent</button>
-              <div class="slider-dots" aria-label="Navigation des extérieurs">
-                <button class="slider-dot is-active" type="button" aria-label="Voir la terrasse" data-slide="0"></button>
-                <button class="slider-dot" type="button" aria-label="Voir la piscine" data-slide="1"></button>
-                <button class="slider-dot" type="button" aria-label="Voir les extérieurs" data-slide="2"></button>
-                <button class="slider-dot" type="button" aria-label="Voir le salon extérieur" data-slide="3"></button>
-                <button class="slider-dot" type="button" aria-label="Voir la maison et le jardin" data-slide="4"></button>
-              </div>
-              <button class="slider-button" type="button" data-dir="1" aria-label="Image suivante">Suivant</button>
-            </div>
-          </div>
+          <div class="brochure-copy" data-copy="outdoor"></div>
+          <div class="media-slider" data-slider="outdoor" data-image-sizes="(max-width: 1080px) calc(100vw - 32px), 58vw"></div>
         </section>
 
         <section class="section section-practical" id="infos">
           <div class="section-heading">
             <h2>Tout le nécessaire pour un séjour confortable.</h2>
           </div>
+          <div class="practical-grid" data-practical-grid></div>
+        </section>
 
-          <div class="practical-grid">
-            <article class="practical-item">
-              <span>Équipement</span>
-              <h3>Wi-Fi, télévision, piscine privée et 2 places de parking.</h3>
-            </article>
-            <article class="practical-item">
-              <span>Village</span>
-              <h3>Bagnols-en-Forêt à 1 km.</h3>
-              <p>Commerces et restaurants à proximité.</p>
-            </article>
-            <article class="practical-item">
-              <span>Situation</span>
-              <h3>Plages et environs facilement accessibles.</h3>
-              <p>Sainte-Maxime, Cannes, Saint-Tropez, Nice et Fayence.</p>
-            </article>
+        <section class="section section-location" id="localisation">
+          <div class="section-heading">
+            <h2>Localisation &amp; trajets</h2>
+            <p class="section-intro">
+              Une base calme pour rejoindre facilement le village, la mer,
+              l’aéroport et plusieurs villes emblématiques de la région.
+            </p>
+          </div>
+          <div class="travel-grid">
+            <div class="travel-card travel-card-map" data-map-card></div>
+            <div class="travel-card travel-card-list" data-travel-list></div>
           </div>
         </section>
 
@@ -406,17 +146,16 @@
           <div class="contact-copy">
             <h2>Pour plus d&apos;informations, veuillez nous contacter.</h2>
             <p>
-              Pour toute demande d&apos;information ou de disponibilité, vous
-              pouvez nous écrire directement par e-mail ou nous appeler.
+              Posez votre question, laissez vos coordonnées si vous le souhaitez,
+              puis ouvrez votre message en un clic.
             </p>
-            <p>Nous serons ravis de vous renseigner sur la maison et votre séjour.</p>
+            <p>
+              Les coordonnées directes restent disponibles après interaction pour
+              limiter le scraping automatique.
+            </p>
           </div>
 
-          <div class="contact-block">
-            <a href="mailto:brigitte.leclercq.vdb@gmail.com">brigitte.leclercq.vdb@gmail.com</a>
-            <a href="mailto:Andre.vandenbauw@progesco.be">Andre.vandenbauw@progesco.be</a>
-            <a href="tel:+32491869869">+32 491 86 98 69</a>
-          </div>
+          <div class="contact-block" data-contact-flow></div>
         </section>
       </main>
 
@@ -424,33 +163,5 @@
         <p>Maison B-Sun, Bagnols-en-Forêt, Sud de la France.</p>
       </footer>
     </div>
-    <script>
-      document.querySelectorAll("[data-slider]").forEach((slider) => {
-        const slides = Array.from(slider.querySelectorAll(".media-slide"));
-        const dots = Array.from(slider.querySelectorAll(".slider-dot"));
-        let index = 0;
-
-        const render = () => {
-          slides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
-          dots.forEach((dot, i) => dot.classList.toggle("is-active", i === index));
-        };
-
-        slider.querySelectorAll(".slider-button").forEach((button) => {
-          button.addEventListener("click", () => {
-            index = (index + Number(button.dataset.dir) + slides.length) % slides.length;
-            render();
-          });
-        });
-
-        dots.forEach((dot, i) => {
-          dot.addEventListener("click", () => {
-            index = i;
-            render();
-          });
-        });
-
-        render();
-      });
-    </script>
   </body>
 </html>
