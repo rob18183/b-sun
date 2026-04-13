@@ -51,12 +51,16 @@ The site must not drift into terracotta-led, beige-luxury, or dark editorial sty
 The brochure does **not** use a refined serif-led luxury look.
 Its personality comes from a contrast between:
 
-- a playful hand-drawn / marker-like display treatment for key titles
-- a cleaner supporting sans-serif for body copy, labels, and practical information
+- a soft handwritten display treatment for selected title words
+- a cleaner supporting sans-serif for body copy, labels, navigation, and the smaller line above the hero title
 
 Important:
-The hero wordmark/title should feel visually close to the brochure cover.
-It should look hand-drawn, friendly, and memorable - not elegant, literary, or high-fashion.
+The PDF screenshots clarify that the typography is more nuanced than a single loud handwritten font across all headings.
+
+- In the hero, the smaller opening line reads as clean bold sans.
+- The large `Maison B-SUN` line carries the handwritten personality.
+- The handwritten style should feel rounded, friendly, and brochure-like, not chunky, graffiti-like, or overly novelty-driven.
+- Handwritten type is an accent, not the entire voice of the page.
 
 ### 2.3 Layout character
 
@@ -171,37 +175,41 @@ Color rules:
 
 ### 5.2 Typography
 
-The biggest correction versus the earlier design doc:
-
-The brochure's title treatment is better described as **hand-drawn display** than as **rounded display**.
+The brochure's title treatment is best described as **soft handwritten accent plus clean sans-serif structure**.
 
 Recommended typography roles:
 
-- **Hero / signature display:** playful hand-drawn display with irregular stroke personality
-- **Section display:** same family or a closely related handwritten display
+- **Hero intro line:** clean bold sans-serif
+- **Hero / signature display words:** soft handwritten display, rounded and friendly
+- **Section display:** handwritten or semi-handwritten only where it helps preserve brochure character
 - **Body / UI:** clean humanist sans-serif or lightly condensed sans-serif
 
 Suggested web font candidates to test visually against the PDF:
 
-- Display candidates: `"Knewave"`, `"Mansalva"`, `"Patrick Hand SC"`, `"Gaegu"`
+- Display candidates: `"Gaegu"`, `"Patrick Hand SC"`, `"Mansalva"`
+- Avoid overly thick display options such as `"Knewave"` for the main title treatment
 - Body/UI candidates: `"Nunito Sans"`, `"Avenir Next"`, `"Source Sans 3"`, `"Barlow"`
 
 Typography rules:
 
-- The hero title should feel custom and memorable.
-- Use display typography only for high-impact headings, not large blocks of copy.
+- The hero should be split into two rhythms:
+  - a smaller sans-serif line such as `Bienvenue à la`
+  - a larger handwritten line such as `Maison B-SUN`
+- Do not set every heading in the same handwritten style at the same scale.
+- Use handwritten type only for high-impact words and section titles.
 - Keep body copy clean and readable.
 - Prefer left alignment.
 - Keep paragraphs narrow enough to scan easily.
-- Use fewer font styles, but make the contrast between headline and body very clear.
+- Make the contrast between handwritten accent and supporting sans-serif deliberate and calm.
 
 Type scale guidance:
 
 | Element | Style |
 |---|---|
 | Hero label | 14-18px, body font, semibold, blue |
-| Hero title | 64-96px desktop, 42-56px tablet, 34-42px mobile, display font, tight line-height |
-| Section title | 34-54px desktop, 28-38px mobile, display font |
+| Hero intro line | 42-64px desktop, 28-40px tablet, 24-32px mobile, bold sans-serif |
+| Hero title accent | 64-96px desktop, 42-60px tablet, 36-46px mobile, handwritten display |
+| Section title | 34-54px desktop, 28-38px mobile, usually handwritten but softer than the hero accent |
 | Intro/body copy | 17-20px, body font, 1.5-1.7 line-height |
 | Labels/meta | 12-14px, body font, semibold, uppercase or short title case |
 | Contact details | 22-32px depending on prominence |
@@ -476,7 +484,8 @@ When updating the current implementation, prioritize changes in this order:
 4. Reduce card density and box-heavy layouts.
 5. Curate the image rhythm: fewer, larger, more intentional image moments.
 6. Strengthen the contact section with yellow emphasis.
-7. Keep the existing content architecture only where it supports clarity.
+7. Refine the hero title so the handwritten treatment appears mainly on the main property name, with cleaner sans-serif support text above it.
+8. Keep the existing content architecture only where it supports clarity.
 
 ---
 
