@@ -132,7 +132,6 @@ function phoneNumber(phone) {
 
 function renderContactFlow() {
   const root = document.querySelector("[data-contact-flow]");
-  const recipients = content.contact.owners.map(emailAddress);
   const details = content.contact.owners
     .map((owner) => {
       const email = emailAddress(owner);
@@ -144,38 +143,12 @@ function renderContactFlow() {
 
   root.innerHTML = `
     <p class="contact-intro">${content.contact.intro}</p>
-    <form class="contact-form">
-      <label>
-        Votre nom
-        <input type="text" name="name" autocomplete="name" placeholder="Nom" />
-      </label>
-      <label>
-        Votre e-mail
-        <input type="email" name="email" autocomplete="email" placeholder="adresse@email.com" />
-      </label>
-      <label>
-        Téléphone (optionnel)
-        <input type="tel" name="phone" autocomplete="tel" placeholder="+32 ..." />
-      </label>
-      <label>
-        Votre message
-        <textarea name="message" rows="4" placeholder="Dates souhaitées, nombre de voyageurs, question..."></textarea>
-      </label>
-      <div class="contact-actions">
-        <button class="button button-primary" type="submit">${content.contact.submitLabel}</button>
-        <button class="button button-secondary" type="button" data-reveal-contact aria-expanded="false">${content.contact.revealLabel}</button>
-      </div>
-    </form>
-    <button class="contact-fallback-link" type="button" data-direct-email>${content.contact.fallbackLabel}</button>
+    <button class="button button-primary" type="button" data-reveal-contact aria-expanded="false">${content.contact.revealLabel}</button>
     <div class="contact-details" data-contact-details hidden></div>
-    <p class="contact-note" data-contact-note></p>
   `;
 
-  const form = root.querySelector(".contact-form");
   const revealButton = root.querySelector("[data-reveal-contact]");
-  const directButton = root.querySelector("[data-direct-email]");
   const detailsBox = root.querySelector("[data-contact-details]");
-  const note = root.querySelector("[data-contact-note]");
   let detailsReady = false;
 
   const ensureDetails = () => {
@@ -198,39 +171,6 @@ function renderContactFlow() {
     revealButton.setAttribute("aria-expanded", String(!expanded));
     revealButton.textContent = expanded ? content.contact.revealLabel : content.contact.hideLabel;
     detailsBox.hidden = expanded;
-  });
-
-  directButton.addEventListener("click", () => {
-    window.location.href = `mailto:${recipients.join(",")}?subject=${encodeURIComponent("Demande Maison B-Sun")}`;
-    note.textContent = "Votre application e-mail doit s’ouvrir pour un message direct.";
-  });
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const formData = new FormData(form);
-    const name = String(formData.get("name") || "").trim();
-    const email = String(formData.get("email") || "").trim();
-    const phone = String(formData.get("phone") || "").trim();
-    const message = String(formData.get("message") || "").trim();
-
-    const body = [
-      name ? `Nom: ${name}` : "",
-      email ? `E-mail: ${email}` : "",
-      phone ? `Téléphone: ${phone}` : "",
-      "",
-      message || "Bonjour, je souhaite obtenir plus d'informations sur la Maison B-Sun."
-    ]
-      .filter(Boolean)
-      .join("\n");
-
-    const subject = encodeURIComponent("Demande Maison B-Sun");
-    const mailto = `mailto:${recipients.join(",")}?subject=${subject}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
-    note.textContent = "Votre application e-mail doit s’ouvrir avec le message prérempli.";
-    ensureDetails();
-    detailsBox.hidden = false;
-    revealButton.setAttribute("aria-expanded", "true");
-    revealButton.textContent = content.contact.hideLabel;
   });
 }
 

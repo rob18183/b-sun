@@ -95,11 +95,9 @@ const siteContent = {
     ]
   },
   contact: {
-    intro: "Envoyez une demande simple. Le bouton ouvre votre application e-mail avec un message prérempli.",
+    intro: "Cliquez pour afficher les coordonnées directes.",
     revealLabel: "Afficher les coordonnées directes",
     hideLabel: "Masquer les coordonnées",
-    submitLabel: "Préparer ma demande",
-    fallbackLabel: "Écrire sans le formulaire",
     owners: [
       {
         name: "Brigitte",
