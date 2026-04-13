@@ -41,6 +41,7 @@ jobs:
         run: |
           mkdir -p dist
           cp index.html styles.css dist/
+          cp -R js data dist/
           cp -R assets dist/
           touch dist/.nojekyll
 
