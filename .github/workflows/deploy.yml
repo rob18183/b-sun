@@ -45,6 +45,14 @@ jobs:
           cp -R assets dist/
           touch dist/.nojekyll
 
+      - name: Verify built artifact contents
+        run: |
+          test -f dist/index.html
+          test -f dist/styles.css
+          test -f dist/js/site.js
+          test -f dist/js/slider.js
+          test -f dist/data/site-content.js
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
